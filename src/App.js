@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import IdCard from './IdCard/IdCard'
 import './App.css';
 
 function App() {
@@ -19,6 +20,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <IdCard lastName='Doe' firstName='John' />
+  
+
+      {/* <Greetings lang="de" name="Ludwig"></Greetings>
+      <Greetings lang="fr" name="François"></Greetings> */}
     </div>
   );
 }
