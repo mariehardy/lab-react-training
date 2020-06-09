@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
-import IdCard from './IdCard/IdCard';
-import Greetings from './Greetings/Greetings';
+import IdCard from './Components/IdCard';
+import Greetings from './Components/Greetings';
+import Random from './Components/Random'
+import BoxColor from './Components/BoxColor'
 
 import './App.css';
 
@@ -22,6 +24,14 @@ function App() {
 
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <Greetings lang="ch">Vu</Greetings>
+
+      <Random min={1} max={6}/>
+      <Random min={10} max={100}/>
+
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+
     </div>
   );
 }

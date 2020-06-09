@@ -6,11 +6,23 @@ const Greetings = (props) => {
 
     let greet 
 
-    if (props.lang === "de") {
-        greet = "Hallo"
-    } else if (props.lang === "fr") {
-        greet = "Bonjour"
-    }
+switch (props.lang) {
+  case 'de' : 
+  greet = "Hallo";
+  break;
+  case 'fr' : 
+  greet = "Bonjour";
+  break;
+  case 'ch' : 
+  greet = "Tzintao";
+  break;
+}
+
+    // if (props.lang === "de") {
+    //     greet = "Hallo"
+    // } else if (props.lang === "fr") {
+    //     greet = "Bonjour"
+    // }
 
     return (
       <div>
