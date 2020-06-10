@@ -2,16 +2,29 @@ import React from 'react'
 
 function BoxColor(props) {
 
-{/* r: A number between 0 and 255 representing the amount of red
-g: A number between 0 and 255 representing the amount of green
-b: A number between 0 and 255 representing the amount of blue */}
+let styles = {
+    backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b} )`,
+}
+
+
+  const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
+    const hex = x.toString(16)
+            console.log("r is ==== " + r)
+
+    return hex.length === 1 ? '0' + hex : hex
+  }).join('')
+
 
     return (
-        <span className="box-color">
-{props.r}
-{props.g}
-{props.a}
-        </span>
+        <div>
+      <div className="square-box" style={styles}>
+      rgb(({props.r}, {props.g}, {props.b} ))
+      <p>
+        { rgbToHex(`${props.r}`, `${props.g}`, `${props.b}`) }
+      </p>  
+      </div>
+          
+      </div>  
     )
 }
 

@@ -16,6 +16,9 @@ switch (props.lang) {
   case 'ch' : 
   greet = "Tzintao";
   break;
+  default: 
+  greet = "Hi";
+  break;
 }
 
     // if (props.lang === "de") {
