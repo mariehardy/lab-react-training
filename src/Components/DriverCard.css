@@ -1,0 +1,32 @@
+.drivercard {
+    background-color: aqua;
+    border-radius: 2em;
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+}
+
+.rect-to-cercle {
+    /* display: inline-block;
+  position: relative; */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.drivercard__img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+    /* border-radius: 50%;
+    width: 200px; */
+}
+
+.info {
+    margin-left: 40px;
+}
